@@ -5,6 +5,7 @@ import Link from "next/link";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import SquigglyLines from "../components/SquigglyLines";
+import ImageLibrary from "./../components/ImageLibrary.tsx";
 import { Testimonials } from "../components/Testimonials";
 
 const Home: NextPage = () => {
@@ -32,7 +33,6 @@ const Home: NextPage = () => {
           </span>{" "}
           for everyone.
         </h1>
-
         <p className="mx-auto mt-12 max-w-xl text-lg text-slate-700 leading-7">
           Have old and blurry face photos? Let our AI restore them so those
           memories can live on. 100% free – restore your photos today.
@@ -80,7 +80,7 @@ const Home: NextPage = () => {
             </div>
           </div>
         </div>
-      </main>
+        <ImageLibrary /></main>
       <Testimonials />
       <Footer />
     </div>
