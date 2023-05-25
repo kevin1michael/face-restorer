@@ -176,13 +176,8 @@ const Home: NextPage = () => {
 
                     const options = `toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=yes, copyhistory=no, width=${width}, height=${height}, top=${top}, left=${left}`;
 
-                    fetch('/api/auth/google-signin-url')
-                      .then((response) => response.json())
-                      .then((data) => {
-                        if (data.url) {
-                          window.open(data.url, 'Google Sign-In', options);
-                        }
-                      });
+                    const url = `/api/auth/signin/google`;
+                    window.open(url, 'Google Sign-In', options);
                   }}
                   className="bg-gray-200 text-black font-semibold py-3 px-6 rounded-2xl flex items-center space-x-2"
                 >
