@@ -1,6 +1,5 @@
 /** @type {import('next').NextConfig} */
 module.exports = {
-  distDir: '../_next',
   reactStrictMode: true,
   images: {
     domains: ["upcdn.io", "replicate.delivery", "lh3.googleusercontent.com"],
