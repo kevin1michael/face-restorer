@@ -4,6 +4,11 @@ module.exports = {
   images: {
     domains: ["upcdn.io", "replicate.delivery", "lh3.googleusercontent.com"],
   },
+  experimental: {
+    swcPlugins: process.env.NEXT_PUBLIC_TEMPO
+      ? [[require.resolve("@petergok/tempo-devtools/swc")], {}]
+      : [],
+  },
   async redirects() {
     return [
       {
