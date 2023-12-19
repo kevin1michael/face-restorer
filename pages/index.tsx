@@ -26,7 +26,7 @@ const Home: NextPage = () => {
         </a>
         <h1 className="mx-auto max-w-4xl font-display text-5xl font-bold tracking-normal text-slate-900 sm:text-7xl">
           Restoring old photos{" "}
-          <span className="relative whitespace-nowrap text-[#3290EE]">
+          <span className="relative whitespace-nowrap text-[#2563eb]">
             <SquigglyLines />
             <span className="relative">using AI</span>
           </span>{" "}
