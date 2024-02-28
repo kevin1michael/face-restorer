@@ -4,7 +4,7 @@ import { SessionProvider } from "next-auth/react";
 import "../styles/globals.css";
 
 // Import the dev tools and initialize them
-import { TempoDevtools } from "@petergok/tempo-devtools";
+import { TempoDevtools } from "tempo-devtools";
 TempoDevtools.init();
 
 function MyApp({ Component, pageProps: { session, ...pageProps } }: AppProps) {
