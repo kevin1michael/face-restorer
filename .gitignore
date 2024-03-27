@@ -36,3 +36,8 @@ yarn-error.log*
 next-env.d.ts
 .env
 .vscode
+
+node_modules/
+tempo.config.json
+**/tempobook/dynamic/
+**/tempobook/storyboards/

@@ -1,26 +1,9 @@
-/** @type {import('next').NextConfig} */
-module.exports = {
-  reactStrictMode: true,
-  images: {
-    domains: ["upcdn.io", "replicate.delivery", "lh3.googleusercontent.com"],
-  },
-  experimental: {
-    swcPlugins: process.env.NEXT_PUBLIC_TEMPO
-      ? [[require.resolve("@petergok/tempo-devtools/swc"), {}]]
-      : [],
-  },
-  async redirects() {
-    return [
-      {
-        source: "/github",
-        destination: "https://github.com/Nutlope/restorePhotos",
-        permanent: false,
-      },
-      {
-        source: "/deploy",
-        destination: "https://vercel.com/templates/next.js/ai-photo-restorer",
-        permanent: false,
-      },
-    ];
-  },
-};
+const nextConfig = {};
+
+if (process.env.NEXT_PUBLIC_TEMPO) {
+  nextConfig["experimental"] = {
+    swcPlugins: [[require.resolve("tempo-devtools/swc"), {}]],
+  };
+}
+
+module.exports = nextConfig;

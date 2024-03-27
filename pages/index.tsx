@@ -28,7 +28,9 @@ const Home: NextPage = () => {
           Restoring old photos{" "}
           <span className="relative whitespace-nowrap text-[#3290EE]">
             <SquigglyLines />
-            <span className="relative">using AI</span>
+            <span className="relative left-[14px] top-[35px] right-[0px]">
+              using MATH
+            </span>
           </span>{" "}
           for everyone.
         </h1>
@@ -56,25 +58,29 @@ const Home: NextPage = () => {
         </div>
         <div className="flex justify-between items-center w-full flex-col sm:mt-10 mt-6">
           <div className="flex flex-col space-y-10 mt-4 mb-16">
-            <div className="flex sm:space-x-2 sm:flex-row flex-col">
+            <div className="flex sm:space-x-2 sm:flex-row flex-col bg-red-500">
               <div>
-                <h2 className="mb-1 font-medium text-lg">Original Photo</h2>
+                <h2 className="mb-1 font-bold uppercase italic text-4xl">
+                  Original Photo
+                </h2>
                 <Image
                   alt="Original photo of my bro"
                   src="/michael.jpg"
-                  className="w-96 h-96 rounded-2xl"
+                  className="w-96 h-96 rounded-2xl rotate-[20deg]"
                   width={400}
                   height={400}
                 />
               </div>
-              <div className="sm:mt-0 mt-8">
-                <h2 className="mb-1 font-medium text-lg">Restored Photo</h2>
+              <div className="sm:mt-0 mt-[17.5px] flex flex-col">
+                <h2 className="mb-1 font-bold uppercase italic text-4xl">
+                  Restored Photo
+                </h2>
                 <Image
                   alt="Restored photo of my bro"
                   width={400}
                   height={400}
                   src="/michael-new.jpg"
-                  className="w-96 h-96 rounded-2xl sm:mt-0 mt-2"
+                  className="w-96 h-96 rounded-2xl sm:mt-0 mt-2 rotate-[-19deg]"
                 />
               </div>
             </div>
