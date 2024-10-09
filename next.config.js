@@ -2,7 +2,12 @@
 module.exports = {
   reactStrictMode: true,
   images: {
-    domains: ["upcdn.io", "replicate.delivery", "lh3.googleusercontent.com"],
+    domains: [
+      "upcdn.io",
+      "replicate.delivery",
+      "lh3.googleusercontent.com",
+      "via.placeholder.com",
+    ],
   },
   experimental: {
     swcPlugins: process.env.NEXT_PUBLIC_TEMPO
