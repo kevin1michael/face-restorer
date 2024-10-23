@@ -40,3 +40,6 @@ next-env.d.ts
 tempo.config.json
 **/tempobook/dynamic/
 **/tempobook/storyboards/
+
+*.db
+*.db-journal
